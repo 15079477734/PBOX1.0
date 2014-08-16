@@ -1,0 +1,186 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/write_day"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.planboxone.MyActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/panel_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title_relative"
+            style="@style/panel_middle">
+
+            <TextView
+                style="@style/label_text"
+                android:text="标题" />
+
+            <EditText
+                android:id="@+id/title_edittext"
+                style="@style/label_text_two"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:hint="点击此处输入标题"
+                android:imeOptions="actionNext"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/line_repeat" />
+
+        <RelativeLayout
+            android:id="@+id/date_relative"
+            style="@style/panel_middle">
+
+            <TextView
+                style="@style/label_text"
+                android:text="日期" />
+
+            <TextView
+                android:id="@+id/date_textview"
+                style="@style/label_text_two"
+                android:hint="日期" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/go_detail" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/line_repeat" />
+
+        <RelativeLayout
+            android:id="@+id/class_relative"
+            style="@style/panel_middle">
+
+            <TextView
+                style="@style/label_text"
+                android:text="分类" />
+
+            <TextView
+                android:id="@+id/category_textview"
+                style="@style/label_text_two"
+                android:hint="分类" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/go_detail" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/line_repeat" />
+
+        <RelativeLayout
+            android:id="@+id/time_relative"
+            style="@style/panel_middle">
+
+            <TextView
+                style="@style/label_text"
+                android:text="时间类型" />
+
+            <TextView
+                android:id="@+id/time_textview"
+                style="@style/label_text_two"
+                android:hint="时间类型" />
+
+            <ImageView
+                style="@style/label_image_one"
+                android:src="@drawable/go_detail"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/line_repeat" />
+
+        <RelativeLayout
+            android:id="@+id/top_relative"
+            style="@style/panel_middle">
+
+            <TextView
+                style="@style/label_text"
+                android:text="置顶" />
+
+            <CheckBox
+                android:id="@+id/top_checkbox"
+                style="@style/panel_item_check_box"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/line_repeat" />
+
+        <RelativeLayout
+            android:id="@+id/note_relative"
+            style="@style/panel_middle">
+
+            <TextView
+                style="@style/label_text"
+                android:text="备注" />
+
+            <EditText
+                android:id="@+id/note_edittext"
+                style="@style/label_text_two"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:hint="备注" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/cancel"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/btn_green"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/btn_blue"
+            android:text="确认" />
+    </RelativeLayout>
+</LinearLayout>

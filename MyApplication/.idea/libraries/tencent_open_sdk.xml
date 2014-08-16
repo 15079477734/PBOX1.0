@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tencent_open_sdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/tencent_open_sdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

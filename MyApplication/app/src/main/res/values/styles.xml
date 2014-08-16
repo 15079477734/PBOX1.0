@@ -1,0 +1,139 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="AppThemeTwo" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:buttonBarButtonStyle">?android:attr/borderlessButtonStyle</item>
+        <item name="android:animationDuration">5000</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/WeChatActionBar</item>
+        <item name="android:itemBackground">@drawable/actionbar_bg_selector</item>
+        <item name="android:actionBarItemBackground">@drawable/actionbar_bg_selector</item>
+        <item name="android:itemTextAppearance">@style/WeChatActionBarOverflow</item>
+        <item name="android:actionOverflowButtonStyle">@style/WeChatActionButtonOverflow</item>
+    </style>
+
+    <style name="label_text">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/darkgrey</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+    <style name="label_text_two">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">right</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:layout_marginRight">18dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="label_image_one">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">right</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+
+    <style name="imagebutton_one">
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="panel_above">
+        <item name="android:background">@drawable/panel_above_bg</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="panel_middle" parent="@style/panel_above">
+        <item name="android:background">@drawable/panel_middle_bg</item>
+    </style>
+
+    <style name="panel_below" parent="@style/panel_above">
+        <item name="android:background">@drawable/panel_below_bg</item>
+    </style>
+
+    <style name="panel_item_check_box">
+        <item name="android:background">@drawable/toggle_btn</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:checked">false</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="radiobutton_style_one">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableRight">@android:drawable/btn_radio
+        </item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+
+    <style name="plan_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:padding">1.0dip</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="dialog2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--模糊-->
+    </style>
+</resources>

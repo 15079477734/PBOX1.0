@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="channelopenauth">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/channelopenauth.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

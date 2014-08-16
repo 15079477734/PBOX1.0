@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.wechatsample.MainActivity">
+
+
+    <item
+        android:id="@+id/action_plus"
+        android:icon="@drawable/actionbar_add_icon"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_plus" />
+
+
+    <item
+        android:id="@+id/action_collection"
+        android:icon="@drawable/ofm_collect_icon"
+        android:title="@string/action_collection" />
+    <item
+        android:id="@+id/action_card"
+        android:icon="@drawable/ofm_card_icon"
+        android:title="打卡" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ofm_setting_icon"
+        android:title="@string/action_settings" />
+    -->
+
+</menu>
