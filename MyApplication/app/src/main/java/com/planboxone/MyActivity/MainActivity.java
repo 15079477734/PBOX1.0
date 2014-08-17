@@ -17,6 +17,7 @@ import android.view.Window;
 
 import com.planboxone.MyWidget.PagerSlidingTabStrip;
 import com.planboxone.R;
+import com.planboxone.Test.DateTimePickActivity;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -112,9 +113,10 @@ public class MainActivity extends FragmentActivity {
             overridePendingTransition(R.anim.slide_in_right, R.anim.zoin);
             return true;
         }
-        if (id == R.id.action_settings
+
+        if (id == R.id.action_collection
                 ) {
-            this.startActivity(new Intent(this,SettingActivity.class));
+            this.startActivity(new Intent(this,DateTimePickActivity.class));
             overridePendingTransition(R.anim.slide_in_right, R.anim.zoin);
             return true;
         }

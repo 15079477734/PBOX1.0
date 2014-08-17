@@ -11,7 +11,7 @@
         <activity
             android:name=".MyActivity.MainActivity"
             android:label="微计划"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".MyActivity.WritePlanActivity"
             android:label="写计划"
@@ -32,14 +32,15 @@
         </activity>
         <activity
             android:name=".MyActivity.GuideActivity"
-            android:theme="@android:style/Theme.Holo.NoActionBar"></activity>
-        <activity android:name=".Test.ModifyPassActivity"></activity>
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity android:name=".Test.ModifyPassActivity" />
         <activity android:name=".Test.OpenPsdActivity" />
         <activity android:name=".Test.ClosePsdActivity" />
         <activity android:name=".Test.SetPsdActivity" />
+        <activity android:name=".MyActivity.AboutUsActivity" />
         <activity
-            android:name=".MyActivity.AboutUsActivity"
-            android:label="@string/title_activity_about_us"></activity>
+            android:name=".Test.DateTimePickActivity"
+            android:label="@string/title_activity_date_time_pick"></activity>
     </application>
 
     <uses-permission android:name="android.permission.VIBRATE" />

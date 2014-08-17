@@ -35,6 +35,7 @@ public class WritePlanActivity extends BaseActivity {
     private ViewWriteHolder mViewWriteHolder;
     private String mTitle, mDate, mCategory, mTop, mNote, mTime;
     private String eoc = null;
+    String dbName = null;
     private final Calendar mCalendar = Calendar.getInstance();
 
     @Override
@@ -47,7 +48,6 @@ public class WritePlanActivity extends BaseActivity {
 
     public void init() {
         String str = null;
-        String dbName = null;
         Intent intent = getIntent();
 
         try {
@@ -66,6 +66,7 @@ public class WritePlanActivity extends BaseActivity {
     }
 
     public void initViewWrite() {
+          dbName="AP";
         mTitle = "";
         mCategory = "工作";
         mDate = GetDate.getDate();
@@ -206,6 +207,7 @@ public class WritePlanActivity extends BaseActivity {
                                                                        mDatavalues.put("title", title);
                                                                        mDatavalues.put("note", mViewWriteHolder.note_edittext.getText().toString());
                                                                        if (eoc.equals("0")) {
+                                                                           mDatabaseManage = new DatabaseManage(WritePlanActivity.this, dbName);
                                                                            mDatabaseManage.addData(mDatavalues);
                                                                            Toast.makeText(WritePlanActivity.this, "保存成功", Toast.LENGTH_LONG).show();
                                                                            finish();

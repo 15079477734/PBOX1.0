@@ -8,6 +8,6 @@ public final class BuildConfig {
   public static final String PACKAGE_NAME = "com.nhaarman.listviewanimations";
   public static final String BUILD_TYPE = "debug";
   public static final String FLAVOR = "";
-  public static final int VERSION_CODE = 2014081623;
+  public static final int VERSION_CODE = 2014081713;
   public static final String VERSION_NAME = "";
 }
